@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="pics/remodel.png" class="logo">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#works">MY WORKS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+    
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-text">
+            <h3 class="name-header">Hi, I'm <span>Kamsy</span>,</h3>
+            <h1><span><span class="orange-letter">C</span>REATIVE</span> <span><span class="orange-letter">W</span>EB</span> <span><span class="orange-letter">D</span>ESIGNER</span></h1>
+            <p>I'm a student at Nile University, currently learning front-end development. I'm working on projects using HTML, CSS, and JavaScript, and I'm particularly interested in creating responsive and user-friendly designs.</p>
+            <p>I'm eager to learn from experienced developers and contribute to real-world projects. I believe in continuous improvement and am excited to see where my web design journey takes me.</p>
+            <a href="resume.html" class="resume-button">View My Resume</a>
+            <a href="#works" class="portfolio-button">See My Projects</a>
+        </div>
+        <div class="home-image">
+            <img src="pics/fffee.png" alt="Web Design Illustration">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1>My Skills</h1>
+        <div class="skills-container">
+            <div class="skills-visual">
+                <div class="skill-card html">HTML</div>
+                <div class="skill-card css">CSS</div>
+                <div class="skill-card python">Python</div>
+                <div class="skill-card JavaScript">JavaScript</div>
+                <img src="pics/py1.png" class="floating-icon floating-icon1" alt="Floating Icon 1">
+                <img src="pics/css1.png" class="floating-icon floating-icon2" alt="Floating Icon 2">
+                <img src="pics/js1.png" class="floating-icon floating-icon3" alt="Floating Icon 3">
+                <img src="pics/ht1.png" class="floating-icon floating-icon4" alt="Floating Icon 4">
+            </div>
+            <div class="skills-description">
+                <p>As a budding web developer, I'm proficient in HTML, CSS, JavaScript and Python, laying the foundation for creating interactive and responsive websites. I'm also delving into React to build dynamic user interfaces.</p>
+                <p>My attributes include a strong problem-solving mindset, attention to detail, and a passion for continuous learning. I'm an analytical thinker, adept at identifying patterns and optimizing processes. I'm a team player and thrive in collaborative environments, always eager to contribute and grow. I also have strong communication skills, which allow me to effectively convey ideas and collaborate with team members and clients.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works">
+        <div class="projects-grid">
+            <div class="project-item">
+                <img src="pics/i1.jpg" alt="Project 1">
+                <h3>Automated Dustbin</h3>
+            <p>An automated dustbin prototype powered by an Arduino board, designed to enhance hygiene and convenience through touchless operation.</p>
+            </div>
+            <div class="project-item">
+                <img src="pics/p.jpg" alt="Project 2">
+                <h3>Student Database System</h3>
+            <p>A database application designed to streamline student data management, facilitating efficient record keeping and organization, using MYSQL,Django, and Flask.</p>
+            </div>
+            <div class="project-item">
+                <img src="pics/t.jpg" alt="Project 3">
+                <h3>Python Games</h3>
+                <p>Made a bunch of python games, ranging from a simple guess the random number game, a rock-paper-scissors game, and a snake game.</p>
+            </div>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Ivokekamsy@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+234 907 469 8186</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Abuja, Nigeria.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kamsi-ivoke" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/kams-i" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/kham_sy_gram" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>    
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+            // Leave this empty, so the navbar background never changes
+        });
+    
+    </script>
+    <script>document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Handle form submission here (e.g., send data to server)
+        alert('Message sent!'); // Replace with actual submission logic
+    });</script>
+</body>
+</html>
